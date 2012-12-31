@@ -3,12 +3,13 @@ MF=	Makefile
 
 CC=	g++
 
-CFLAGS=-I/home/savvas/local_software/include
-LFLAGS=-L/home/savvas/local_software/lib -lquickfix
+CFLAGS=-I$(HOME)/local_software/include
+LFLAGS=-L$(HOME)/local_software/lib -lquickfix
 PREPROC=
 
 EXE=	prog
-SRC=	Application.cpp tradeclient.cpp
+SRC=	Application.cpp \
+		tradeclient.cpp
 
 OBJ=	$(SRC:.cpp=.o)
 
