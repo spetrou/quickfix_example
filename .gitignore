@@ -1,2 +1,4 @@
 .svn
 *.o
+ordermatch/prog
+tradeclient/prog
